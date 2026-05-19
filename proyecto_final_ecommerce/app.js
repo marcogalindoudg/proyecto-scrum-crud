@@ -34,6 +34,7 @@ async function cargarCatalogo() {
         const card = document.createElement('div');
         card.className = 'producto-card';
         card.innerHTML = `
+            <small style="color: #007bff; font-weight: bold; display: block; margin-bottom: 8px; text-transform: uppercase; font-size: 0.85rem;">ID del Producto: ${producto.id}</small>
             <img src="${producto.imagen}" alt="${producto.nombre}">
             <h4>${producto.nombre}</h4>
             <p>$${parseFloat(producto.precio).toFixed(2)}</p>
